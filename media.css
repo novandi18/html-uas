@@ -1,0 +1,603 @@
+/* Tablet */
+@media screen and (max-width: 1145px) {
+    /* Navbar */
+    .navbar .menu ul li a {
+        padding: 10px 10px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar .logo {
+        padding-left: 25px;
+    }
+
+    .menunav {
+        display: none;
+    }
+    
+    .navbar .toggle {
+        display: none;
+    }
+
+    .navbar .menu {
+        padding-right: 25px;
+    }
+
+    .banner .title h1 {
+        font-size: 40px;
+    }
+
+    .banner .title p {
+        font-size: 15px;
+    }
+
+    .banner .title a {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+
+    /* Box banner */
+    .bgbox .box {
+        padding: 20px 30px;
+        margin-top: -80px;
+    }
+    
+    .bgbox .box .title {
+        font-size: 12px;
+    }
+
+    .bgbox .box .list .listbox {
+        padding: 10px;
+    }
+
+    .bgbox .box .list .listbox .icon object {
+        width: 60px;
+    }
+
+    /* Register */
+    .register .form .imgreg {
+        padding-right: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .register .form .imgreg img {
+        width: 350px;
+    }
+
+    .register .form .title {
+        padding-left: 25px;
+    }
+
+    .register .form .title .head {
+        font-size: 15px;
+    }
+
+    .register .form .title .input button {
+        padding: 12px 17px;
+        font-size: 13px;
+    }
+
+    .register .form .title .input .inputlist input {
+        width: 300px;
+    }
+
+    /* Alumni */
+    .alumni .alumnibox .list .pic.focus .img img {
+        width: 140px;
+    }
+
+    .alumni .alumnibox .list .pic.focus .img {
+        justify-content: center;
+        display: flex;
+    }
+
+    .alumni .alumnibox .list .pic .img img {
+        width: 90px;
+    }
+
+    .alumni .alumnibox .list .pic .img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .alumni .alumnibox .list .pic {
+        margin: 0 10px;
+    }
+
+    .alumni .alumnibox .list {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Schedule */
+    .schedule .box .img {
+        display: flex;
+        align-items: center;
+    }
+    
+    .schedule .box .img img {
+        width: 320px;
+    }
+
+    .schedule .box .table .head {
+        font-size: 15px;
+    }
+
+    .schedule .box .table {
+        padding-right: 10px;
+    }
+
+    .schedule .box .table .sub .tab table {
+        width: 350px;
+    }
+
+    .schedule .box .table .sub .tab table tbody {
+        height: 280px;
+    }
+
+    .curve-2-bottom {
+        margin-top: -10px;
+    }
+
+    /* Alumni */
+    .about {
+        margin-top: -60px;
+    }
+
+    /* Footer */
+    .footer .detail {
+        padding-right: 30px;
+    }
+
+    .footer .logo {
+        padding: 0 30px;
+    }
+
+    .footer .detail .connect {
+        margin: 0 40px;
+    }
+}
+
+/* Mobile large */
+@media screen and (max-width: 930px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner img {
+        width: 930px;
+    }
+
+    /* Box Banner */
+    .bgbox .box {
+        padding: 20px 20px;
+        margin-top: -30px;
+    }
+
+    .bgbox .box .list .listbox {
+        margin: 0 10px;
+    }
+
+    .banner .title a {
+        padding: 15px 30px;
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .banner .title h1 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .banner .title p {
+        font-size: 15px;
+    }
+
+    /* Register */
+    .curve-top {
+        margin-bottom: -10px;
+    }
+
+    .curve-bottom {
+        margin-top: 0px;
+    }
+
+    .register .form .imgreg {
+        display: none;
+    }
+
+    .register .form .title .input .inputlist input {
+        width: 400px;
+    }
+
+    /* Alumni */
+    .alumni .alumnibox .list .pic .name {
+        display: none;
+    }
+
+    .alumni .alumnibox .list .pic.focus .name {
+        display: block;
+        font-size: 20px;
+    }
+
+    .alumni .alumnibox .list .pic.focus .subname {
+        display: block;
+        font-size: 12px;
+    }
+
+    .alumni .alumnibox .list .pic {
+        margin: 0 7px;
+    }
+    
+    /* Schedule */
+    .schedule .box .img {
+        display: none;
+    }
+
+    .schedule .box .table .head {
+        font-size: 20px;
+    }
+
+    .schedule .box .table .sub .tab table {
+        width: 400px;
+    }
+
+    /* Footer */
+    .curve-footer {
+        margin-bottom: -10px;
+        margin-top: 30px;
+    }
+
+    /* Navbar */
+    .container {
+        grid-template-areas: 
+            'navbar navbar navbar'
+            'menu menu menu'
+            'banner banner banner'
+            'content content content'
+            'curve-footer curve-footer curve-footer'
+            'footer footer footer';
+    }
+
+    .navbar {
+        height: 70px;
+        display: grid;
+        background-color: transparent;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'logo menunav'
+            'menu menu';
+    }
+
+    .navbar .toggle a {
+        background-color: #fd9d1f;
+        border-radius: 10px;
+        color: #151515;
+        padding: 7px 20px;
+        font-weight: bold;
+        transition: all ease .2s;
+        text-decoration: none;
+        margin-right: 25px;
+    }
+
+    .navbar .toggle a:hover {
+        background-color: #e48406;
+        transition: all ease .2s;
+    }
+
+    .navbar .toggle a:active {
+        background-color: #bd6b00;
+        transition: all ease .2s;
+    }
+
+    .navbar .toggle {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 25px;
+        z-index: 1;
+        background-color: rgb(15,15,15);
+    }
+    
+    .navbar .toggle .icon {
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .navbar .toggle .icon input {
+        position: absolute;
+        width: 30px;
+        height: 26px;
+        opacity: 0;
+        z-index: 1;
+        cursor: pointer;
+        margin-top: -3px;
+        margin-left: -1.5px;
+        outline: none;
+    }
+
+    /* Hamburger menu animation */
+    .navbar .toggle .icon input:checked ~ span:nth-child(2) {
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+    
+    .navbar .toggle .icon input:checked ~ span:nth-child(3) {
+        transform: scale(0);
+    }
+
+    .navbar .toggle .icon input:checked ~ span:nth-child(4) {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+
+    .navbar .toggle .icon span:nth-child(2) {
+        transform-origin: 0 0;
+    }
+
+    .navbar .toggle .icon span:nth-child(4) {
+        transform-origin: 0 100%;
+    }
+
+    /* End of hamburger menu animation */
+
+    .navbar .toggle .icon span {
+        border-radius: 25px;
+        height: 2px;
+        display: block;
+        width: 28px;
+        background-color: white;
+        transition: all .3s;
+    }
+
+    .navbar .logo span {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .navbar .logo {
+        padding-left: 25px;
+        height: 70px;
+        z-index: 1;
+        background-color: rgb(15,15,15);
+    }
+
+    .navbar .menu {
+        justify-content: center;
+        height: 80px;
+        margin-top: -80px;
+        display: fixed;
+        background-color: rgb(15,15,15);
+        z-index: -2;
+        transition: all .3s;
+    }
+
+    .navbar .menu ul li a.active.shows::before {
+        margin-bottom: -60px;
+        transition: all .3s;
+    }
+    
+    .navbar .menu ul li a.show:hover::before {
+        margin-bottom: -60px;
+    }
+    
+    .navbar .logo.bg {
+        background-color: rgb(15,15,15);
+    }
+
+    .navbar .menu.show {
+        margin-top: 0;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,.3);
+    }
+    
+    .navbar .menu ul li a.active::before {
+        content: "";
+        transition: all .3s;
+        margin-bottom: 20px;
+        position: absolute;
+    }
+
+    .navbar .menu ul li a:hover::before {
+        content: "";
+        margin-bottom: 20px;
+        position: absolute;
+    }
+
+    .navbar .menu ul li a {
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+    }
+
+    /* Hide Login button */
+    .navbar .menu ul li a:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    /* Navbar */
+    .navbar .logo span {
+        line-height: 1.2;
+        font-size: 18px;
+    }
+
+    .navbar .menu ul {
+        margin-right: -20px;
+    }
+
+    .navbar .menu ul li a {
+        padding: 10px 10px;
+    }
+
+    /* Banner */
+    .banner .title h1 {
+        font-size: 35px;
+    }
+
+    .banner .title p {
+        margin: 0 40px;
+    }
+
+    /* Box */
+    .bgbox .box {
+        padding: 35px 40px;
+    }
+
+    .bgbox .box .list .listbox .desc {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Curve Top Register */
+    .curve-top {
+        grid-area: curve-top;
+        margin-top: 270px;
+        margin-bottom: -8px;
+    }
+
+    /* Register */
+    .register .form {
+        justify-content: flex-start;
+    }
+
+    .register .form .title .head {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .register .form .title {
+        width: 100%;
+        padding-right: 25px;
+    }
+
+    .register .form .title .input {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .register .form .title .input .inputlist input {
+        width: auto;
+    }
+
+    /* Alumni */
+    .alumni .alumnibox {
+        margin-top: 40px;
+    }
+    .alumni .alumnibox .titles .title {
+        font-size: 20px;
+    }
+
+    .alumni .alumnibox .quote .boxquote blockquote {
+        width: 400px;
+    }
+
+    /* Curve Top Schedule */
+    .curve-2-top {
+        margin-top: 5px;
+        margin-bottom: -10px;
+    }
+
+    /* Schedule */
+    .schedule .box .table .head {
+        text-align: center;
+    }
+
+    /* Tentang Kami */
+    .about {
+        margin-top: 0;
+        padding: 0 35px;
+    }
+
+    /* Partner */
+    .partner .box {
+        padding: 30px 30px;
+    }
+
+    .partner .box .title {
+        font-size: 20px;
+    }
+
+    .partner .box .logo .img .list:first-child object {
+        width: 100px;
+        margin: 0 10px;
+    }
+    
+    .partner .box .logo .img .list:first-child object:nth-child(3) {
+        width: 120px;
+    }
+
+    .partner .box .logo .img .list:first-child object:nth-child(2),
+    .partner .box .logo .img .list:first-child object:nth-child(4) {
+        width: 50px;
+    }
+
+    .partner .box .logo .img .list:last-child object {
+        width: 80px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    /* Footer */
+    .footer .body {
+        flex-direction: column;
+    }
+
+    .footer .body .logo {
+        margin-top: -20px;
+    }
+
+    .footer .detail {
+        padding-top: 25px;
+        padding-right: 0;
+    }
+
+    .footer .detail .group .title {
+        font-size: 20px;
+    }
+
+    .footer .detail .group .list ol {
+        padding-left: .7em;
+    }
+
+    .footer .detail .group .list ol li {
+        margin: 3px 0;
+        font-size: .8em;
+    }
+
+    .footer .detail .connect {
+        margin: 0 20px;
+    }
+
+    .footer .detail .connect .title {
+        font-size: 20px;
+    }
+
+    .footer .detail .connect .list dl dt {
+        margin: 5px 0;
+    }
+
+    .footer .detail .connect .list dl dt a {
+        font-size: .8em;
+    }
+
+    .footer .detail .etc {
+        font-size: 15px;
+    }
+    
+    .footer .copyright {
+        font-size: 12px;
+    }
+
+    /* Modal */
+    .modal .body .head {
+        width: 450px;
+    }
+}

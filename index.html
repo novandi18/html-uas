@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynove Academy</title>
+    <!-- File Styling -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="img/logo/icon.svg"/>
+    <!-- Caveat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar" id="nav">
+            <!-- Logo -->
+            <div class="item logo">
+                <img src="img/logo/icon.svg" alt="logo">
+                <span>Rynove Academy</span>
+            </div>
+            <!-- Menu -->
+            <div class="item menu">
+                <ul>
+                    <li>
+                        <a href="#" class="active">Beranda</a>
+                        <a href="#reg" id="btnReg">Pendaftaran</a>
+                        <a href="#alumni">Alumni</a>
+                        <a href="#">Tentang Kami</a>
+                        <a href="#" id="login">Masuk</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="item toggle">
+                <a href="#" id="loginM">Masuk</a>
+                <div class="icon">
+                    <input type="checkbox" id="btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- End of Navbar -->
+
+        <!-- Jumbotron -->
+        <div class="banner">
+            <div class="title">
+                <h1>Gabung Bersama Kami</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, esse ab facere tenetur aliquid deleniti aspernatur ad odio voluptatum optio cumque pariatur vel, amet sint quisquam accusamus similique iure cupiditate.</p>
+                <a href="">GABUNG SEKARANG</a>
+            </div>
+            <img src="img/banner.jpg" alt="banner">
+        </div>
+        <!-- End of Jumbotron -->
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Box -->
+            <div class="bgbox">
+                <div class="box">
+                    <div class="title">
+                        <h1><span>Mengapa</span> harus bergabung dengan <span>kami</span>?</h1>
+                    </div>
+                    <div class="list">
+                        <div class="listbox">
+                            <div class="icon">
+                                <object data="img/icon/presentation.svg" type="image/svg+xml"></object>
+                            </div>
+                            <div class="desc">
+                                <span>Pengajar Tersertifikasi</span>
+                            </div>
+                        </div>
+                        <div class="listbox">
+                            <div class="icon">
+                                <object data="img/icon/salary.svg" type="image/svg+xml"></object>
+                            </div>
+                            <div class="desc">
+                                <span>Biaya Terjangkau</span>
+                            </div>
+                        </div>
+                        <div class="listbox">
+                            <div class="icon">
+                                <object data="img/icon/suitcase.svg" type="image/svg+xml"></object>
+                            </div>
+                            <div class="desc">
+                                <span>Jaminan Kerja</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Curve 1 -->
+            <div class="curve-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fd9d1f" fill-opacity="1" d="M0,224L60,218.7C120,213,240,203,360,181.3C480,160,600,128,720,133.3C840,139,960,181,1080,192C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            </div>
+            
+            <!-- Register -->
+            <div class="register">
+                <div class="form">
+                    <div class="imgreg">
+                        <img src="img/register.png" alt="imgreg">
+                    </div>
+                    <div class="title">
+                        <div class="head">
+                            <h1>Pendaftaran</h1>
+                        </div>
+                        <div class="input">
+                            <div class="inputlist">
+                                <label for="nama">Nama Lengkap</label>
+                                <input type="text" id="nama" placeholder="Nama Lengkap">
+                            </div>
+                            <div class="inputlist">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" placeholder="Alamat Email">
+                            </div>
+                            <div class="inputlist">
+                                <label for="date">Tanggal Lahir</label>
+                                <input type="date" id="date">
+                            </div>
+                            <div class="inputlist">
+                                <label for="study">Asal Sekolah / Instansi</label>
+                                <input type="text" id="study" placeholder="Asal Sekolah / Instansi">
+                            </div>
+                            <button type="button">Gabung Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curve 2 -->
+            <div class="curve-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fd9d1f" fill-opacity="1" d="M0,224L60,218.7C120,213,240,203,360,181.3C480,160,600,128,720,133.3C840,139,960,181,1080,192C1200,203,1320,181,1380,170.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+            </div>
+
+            <!-- Alumni -->
+            <div class="alumni">
+                <div class="alumnibox">
+                    <div class="titles">
+                        <div class="headtitle">
+                            <span>Alumni</span>
+                        </div>
+                        <div class="title">
+                            <h1>Apa Kata Mereka?</h1>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="pic">
+                            <div class="img">
+                                <img src="img/pic/2.jpg">
+                            </div>
+                            <div class="name">Minami Hamabe</div>
+                        </div>
+                        <div class="pic">
+                            <div class="img">
+                                <img src="img/pic/3.png">
+                            </div>
+                            <div class="name">Amelia Andani</div>
+                        </div>
+                        <div class="pic focus">
+                            <div class="img">
+                                <img src="img/pic/1.png">
+                            </div>
+                            <div class="name">Novandi Ramadhan</div>
+                            <div class="subname">Software Engineer at Google, Inc</div>
+                        </div>
+                        <div class="pic">
+                            <div class="img">
+                                <img src="img/pic/4.png">
+                            </div>
+                            <div class="name">Ivana Fahroini</div>
+                        </div>
+                        <div class="pic">
+                            <div class="img">
+                                <img src="img/pic/5.png">
+                            </div>
+                            <div class="name">Rizka Marifatul</div>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <div class="boxquote">
+                            <blockquote>Hidup seperti larry si lobster.</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curve 3 -->
+            <div class="curve-2-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#008575" fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,176C1120,171,1280,213,1360,234.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            </div>
+
+            <!-- Schedule -->
+            <div class="schedule">
+                <div class="box">
+                    <div class="table">
+                        <div class="head">
+                            <h1>Pelatihan</h1>
+                        </div>
+                        <div class="sub">
+                            <div class="tab">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Pelatihan</th>
+                                            <th>Estimasi Waktu</th>
+                                            <th>Biaya</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Data Science</td>
+                                            <td>1 Tahun</td>
+                                            <td>Rp. 2.999.000,-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Artificial Intelligence</td>
+                                            <td>2 Tahun</td>
+                                            <td>Rp. 5.699.000,-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Full Stack Developer</td>
+                                            <td>1 Tahun</td>
+                                            <td>Rp. 1.899.000,-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Android Developer</td>
+                                            <td>1 Tahun</td>
+                                            <td>Rp. 4.099.000,-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Robotics</td>
+                                            <td>2 Tahun</td>
+                                            <td>Rp. 9.899.000,-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Game Developer</td>
+                                            <td>3 Tahun</td>
+                                            <td>Rp. 7.599.000,-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DevOps</td>
+                                            <td>3 Tahun</td>
+                                            <td>Rp. 7.899.000,-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="img/schedule.png" alt="schedule">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curve 4 -->
+            <div class="curve-2-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#008575" fill-opacity="1" d="M0,256L80,218.7C160,181,320,107,480,85.3C640,64,800,96,960,117.3C1120,139,1280,149,1360,154.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+            </div>
+
+            <!-- About -->
+            <div class="about">
+                <div class="img">
+                    <img src="img/logo/icon.svg">
+                </div>
+                <div class="head">
+                    <h1>Tentang Kami</h1>
+                </div>
+                <div class="aboutdesc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magnam similique magni vel ea voluptatum nesciunt neque? Voluptatum laudantium nostrum voluptates? Doloribus aut modi, possimus cum, error repudiandae labore quae vel odio, inventore eum? Optio totam iure ipsam molestias quod magni pariatur quis sunt temporibus labore, ab error numquam sapiente alias harum aperiam itaque vitae. Magnam vel ut autem sed quae ipsum harum, sit reiciendis animi, doloribus eveniet labore nostrum nesciunt voluptas et! Animi tempore nihil, illo soluta ex incidunt culpa quas perferendis optio, atque, iusto minus magni dignissimos iure velit quo ut quaerat tempora molestiae. Laudantium asperiores voluptatibus numquam.
+                </div>
+            </div>
+
+            <!-- Partner -->
+            <div class="partner">
+                <div class="box">
+                    <div class="title">
+                        <span>Kami telah bekerja sama dengan</span>
+                    </div>
+                    <div class="logo">
+                        <div class="img">
+                            <div class="list">
+                                <object data="img/partner/microsoft.svg" type="image/svg+xml"></object>
+                                <object data="img/partner/intel.svg" type="image/svg+xml"></object>
+                                <object data="img/partner/gc.svg" type="image/svg+xml"></object>
+                                <object data="img/partner/ibm.svg" type="image/svg+xml"></object>
+                            </div>
+                            
+                            <div class="list">
+                                <object data="img/partner/fanuc.svg" type="image/svg+xml"></object>
+                                <object data="img/partner/tokopedia.svg" type="image/svg+xml"></object>
+                                <object data="img/partner/facebook.svg" type="image/svg+xml"></object>
+                                <object data="img/partner/oracle.svg" type="image/svg+xml"></object>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Content -->
+
+        <!-- Curve Footer -->
+        <div class="curve-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0F0F0F" fill-opacity="1" d="M0,288L40,288C80,288,160,288,240,261.3C320,235,400,181,480,154.7C560,128,640,128,720,149.3C800,171,880,213,960,208C1040,203,1120,149,1200,128C1280,107,1360,117,1400,122.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="body">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="img/logo/icon.svg">
+                </div>
+                <!-- Detail -->
+                <div class="detail">
+                    <!-- Etc -->
+                    <div class="etc">
+                        <div class="list">
+                            <a href="#">Terms</a>
+                        </div>
+                        <div class="list">
+                            <a href="#">Privacy & Policy</a>
+                        </div>
+                        <div class="list">FAQ</div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="connect">
+                        <div class="title">
+                            <span>Sosial Media</span>
+                        </div>
+                        <div class="list">
+                            <dl>
+                                <dt>
+                                    <a href="#facebook">
+                                        <i class="fab fa-facebook"></i>
+                                        Facebook
+                                    </a>
+                                </dt>
+                                <dt>
+                                    <a href="#instagram">
+                                        <i class="fab fa-instagram"></i>
+                                        Instagram
+                                    </a>
+                                </dt>
+                                <dt>
+                                    <a href="#youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        Youtube
+                                    </a>
+                                </dt>
+                                <dt></dt>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <!-- Group name -->
+                    <div class="group">
+                        <div class="title">
+                            <span>Kelompok 7</span>
+                        </div>
+                        <div class="list">
+                            <ol>
+                                <li>Rafli Ramadhani</li>
+                                <li>Nico Nada Aqsal Bisiffa</li>
+                                <li>Rizki Ramadhan</li>
+                                <li>Novandi Ramadhan</li>
+                                <li>Rastiyanti</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&#169; 2021 Rynove Academy</p>
+            </div>
+        </div>
+        <!-- End of Footer -->
+    </div>
+    
+    <!-- Modal Login -->
+    <div class="modal">
+        <div class="body">
+            <div class="head">
+                <div class="title">
+                    <span>Masuk Akun</span>
+                </div>
+                <div class="close">
+                    <span id="close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="inputs">
+                    <label>Email</label>
+                    <input type="text" placeholder="Masukkan email">
+                </div>
+                <div class="inputs">
+                    <label>Password</label>
+                    <div class="pw">
+                        <input type="password" placeholder="Masukkan password" id="pw">
+                        <span id="show"><i class="fa fa-eye"></i></span>
+                    </div>
+                </div>
+                <div class="option">
+                    <div class="keep">
+                        <input class="check" id="keep-in" type="checkbox">
+                        <label for="keep-in">Tetap masuk</label>
+                    </div>
+                    <a href="">Lupa Password?</a>
+                </div>
+                <div class="submit">
+                    <button type="button">Masuk</button>
+                </div>
+
+                <hr>
+                
+                <div class="signwith">
+                    <div class="title">
+                        <span>Atau masuk dengan</span>
+                    </div>
+                    <div class="icon">
+                        <div class="img">
+                            <a href="">
+                                <object data="img/signin/g.svg" type="image/svg+xml"></object>
+                            </a>
+                        </div>
+                        <div class="img">
+                            <a href="">
+                                <object data="img/signin/fb.svg" type="image/svg+xml"></object>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,6 +10,7 @@ $(document).ready(function() {
     let logo = $(".navbar .logo");
     let menubefore = $(".navbar .menu ul li a");
     let menubeforeactive = $(".navbar .menu ul li a.active");
+    let scroll = 0;
 
     document.getElementById("show").addEventListener("click", function() {
         showPW();
@@ -40,12 +41,32 @@ $(document).ready(function() {
             $(window).scrollTop(970);
         });
     }
-
-    let scroll = 0;
     
     $(document).scroll(function() {
         scroll = $(this).scrollTop();
+        Responsive();
+    });
 
+    function showPW() {
+        let pw = document.getElementById("pw");
+        if(pw.type === "password") {
+            pw.type = "text";
+        } else {
+            pw.type = "password";
+        }
+    }
+
+    function showModal() {
+        container.css({"filter":"blur(3px)","transition":"all ease .2s"});
+        modal.css({"display":"flex"});
+    }
+
+    function closeModal() {
+        container.css({"filter":"none","transition":"all ease .2s"});
+        modal.css({"display":"none"});
+    }
+
+    function Responsive() {
         if(window.matchMedia('(max-width: 930px)').matches) {
             if(scroll > 1) {
                 if($("#btn").is(':checked')) {
@@ -84,25 +105,10 @@ $(document).ready(function() {
                 $("#nav .menu").css({"background-color":"transparent","display":"flex"});
             }
         }
+    }
+
+    $(".moon").click(function() {
+        $("#us").addClass("dark");
+        $("#us-title").addClass("darktext");
     });
-
-
-    function showPW() {
-        let pw = document.getElementById("pw");
-        if(pw.type === "password") {
-            pw.type = "text";
-        } else {
-            pw.type = "password";
-        }
-    }
-
-    function showModal() {
-        container.css({"filter":"blur(3px)", "margin":"-3px","transition":"all ease .2s"});
-        modal.css({"display":"flex"});
-    }
-
-    function closeModal() {
-        container.css({"filter":"none","margin":"0","transition":"none"});
-        modal.css({"display":"none"});
-    }
 });

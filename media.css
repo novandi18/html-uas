@@ -273,27 +273,6 @@
             'menu menu';
     }
 
-    .navbar .toggle a {
-        background-color: #fd9d1f;
-        border-radius: 10px;
-        color: #151515;
-        padding: 7px 20px;
-        font-weight: bold;
-        transition: all ease .2s;
-        text-decoration: none;
-        margin-right: 25px;
-    }
-
-    .navbar .toggle a:hover {
-        background-color: #e48406;
-        transition: all ease .2s;
-    }
-
-    .navbar .toggle a:active {
-        background-color: #bd6b00;
-        transition: all ease .2s;
-    }
-
     .navbar .toggle {
         color: white;
         display: flex;
@@ -412,11 +391,6 @@
         color: white;
         padding: 10px 30px;
         text-decoration: none;
-    }
-
-    /* Hide Login button */
-    .navbar .menu ul li a:last-child {
-        display: none;
     }
 }
 

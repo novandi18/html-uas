@@ -16,8 +16,7 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* margin: -3px;
-    filter: blur(3px); */
+    /* filter: blur(3px); */
     width: 100%;
     grid-template-areas: 
         'navbar navbar navbar'
@@ -82,12 +81,23 @@ html {
 
 .navbar .menu ul {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu ul li:first-child {
+    display: flex;
+}
+
+.navbar .menu ul li .mode input {
+    display: inline;
 }
 
 .navbar .menu ul li a {
     color: white;
     padding: 10px 15px;
     text-decoration: none;
+    display: flex;
 }
 
 .navbar .menu ul li a.active::before {
@@ -195,7 +205,7 @@ html {
         'about about'
         'partner partner';
 }
-    
+
 .bgbox {
     grid-area: bgbox;
     display: flex;
@@ -784,18 +794,25 @@ html {
 /* ====== Update 1.2 - Login Form ======= */
 
 /* Login button */
-.navbar .menu ul li a:last-child {
-    background-color: #fd9d1f;
+.navbar .menu ul li:first-child a:last-child {
+    background-color: transparent;
+    border: 1px solid white;
     border-radius: 15px;
-    color: #151515;
+    color: white;
     padding: 10px 20px;
     font-weight: bold;
     transition: all ease .2s;
     display: inline-block;
+    outline: none;
+    margin-left: 5px;
 }
 
-.navbar .menu ul li a:last-child:hover {
+.navbar .menu ul li:first-child a:last-child:hover {
     animation: btnlogin 1s;
+    background-color: #e48406;
+    transition: all ease .2s;
+    color: #151515;
+    border: 1px solid #e48406;
 }
 
 @keyframes btnlogin {
@@ -820,18 +837,12 @@ html {
     }
 }
 
-.navbar .menu ul li a:last-child:hover {
-    background-color: #e48406;
-    transition: all ease .2s;
-    /* animation: btnlogin 2s infinite; */
-}
-
-.navbar .menu ul li a:last-child:active {
+.navbar .menu ul li:first-child a:last-child:active {
     background-color: #bd6b00;
     transition: all ease .2s;
 }
 
-.navbar .menu ul li a:last-child::before {
+.navbar .menu ul li:first-child a:last-child::before {
     border: none;
 }
 
